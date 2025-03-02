@@ -1,4 +1,4 @@
-# Deploy a Minimal AWS EC2 Instance using Terraform
+# Deploy a AWS EC2 Instance using Terraform
 
 This guide provides step-by-step instructions to create a minimal AWS EC2 instance using Terraform and push the configuration to GitHub.
 
@@ -44,18 +44,10 @@ terraform plan
 terraform apply -auto-approve
 ```
 
-## Step 4: Push to GitHub
-
-Initialize a Git repository and push the Terraform configuration:
-
-```bash
-git init
-git add .
-git commit -m "Initial commit for Terraform AWS Instance"
-git branch -M main
-git remote add origin <your-github-repo-url>
-git push -u origin main
-```
+## Step 4: Confirming the Deployment
+Go to the AWS Console
+Navigate to EC2 → Instances
+Verify that your instance is running 🎉
 
 ## Step 5: Destroy the Instance (Optional)
 
